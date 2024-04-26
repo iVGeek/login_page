@@ -1,49 +1,47 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: skyblue;
-    overflow: hidden; /* Prevent horizontal scrollbar due to animation */
-}
-
-.container {
-    position: relative; /* Needed for absolute positioning of pebbles */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.pebbles {
-    position: absolute;
-    top: 0;
-    left: 0;
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
     width: 100%;
-    height: 100%;
-    pointer-events: none; /* Allow clicks to pass through pebbles */
 }
 
-.pebble {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: pink;
-    animation: float 20s linear infinite;
+.form-group {
+    margin-bottom: 20px;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        background-color: pink;
-    }
-    50% {
-        transform: translateY(-100vh) rotate(180deg);
-        background-color: lightgreen;
-    }
-    100% {
-        transform: translateY(-200vh) rotate(360deg);
-        background-color: pink;
-    }
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: dodgerblue;
 }
 

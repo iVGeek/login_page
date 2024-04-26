@@ -42,7 +42,7 @@
 
         @keyframes float {
             0% {
-                transform: translateY(0) rotate(0deg);
+                transform: translateY(100vh) rotate(0deg);
                 background-color: pink;
             }
             50% {
@@ -50,7 +50,7 @@
                 background-color: lightgreen;
             }
             100% {
-                transform: translateY(-200vh) rotate(360deg);
+                transform: translateY(-300vh) rotate(360deg);
                 background-color: pink;
             }
         }
@@ -85,6 +85,7 @@
                 const pebble = document.createElement('div');
                 pebble.classList.add('pebble');
                 pebble.style.left = `${Math.random() * 100}%`; // Random horizontal position
+                pebble.style.animationDelay = `${Math.random() * 20}s`; // Random animation delay
                 pebble.style.animationDuration = `${Math.random() * 10 + 5}s`; // Random animation duration
                 pebblesContainer.appendChild(pebble);
             }
