@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: skyblue;
+    color: #333; /* Default text color */
     overflow: hidden; /* Prevent horizontal scrollbar due to animation */
 }
 
@@ -97,7 +98,7 @@ h2 {
 /* Dark mode styles */
 .dark-mode {
     background-color: #333;
-    color: #fff;
+    color: #fff; /* Text color in dark mode */
 }
 
 .mode-toggle {
